@@ -5,9 +5,11 @@ import click
 import sqlite3
 from sqlite3 import Error
 
-#@click.command()
 
-#@click.group()
+@click.group()
+def db_commands():
+    pass
+
 def init():
     create_connection("./pomodoro.db")
 
